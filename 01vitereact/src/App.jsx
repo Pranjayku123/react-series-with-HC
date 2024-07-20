@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
-
+import Test from './test';
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <h1>Chai aur code with vite | Pranjay</h1>
+    <>
+    <Test />
+    <h5>Pranjay</h5>
+    </>
+    
   );
 }
 
