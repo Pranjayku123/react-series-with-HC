@@ -15,8 +15,8 @@ function App() {
   if (numAllowed) str+="0123456789" ;
   if (charAllowed) str+="@#$^&*+=~`";
   
-  for (let i = 1; i <= length; i++) {
-    let char = Math.floor(Math.random()*str.length + 1);
+  for (let i = 1; i <= length; i++) { 
+    let char = Math.floor(Math.random()*str.length + 1); 
     pass += str.charAt(char);
   }
 
@@ -51,7 +51,7 @@ function App() {
             <input 
             type="range" 
             min={6}
-            max={24}
+            max={32} 
             value={length}
             className='cursor-pointer' 
             onChange={(e)=>{setLength(e.target.value)}}
